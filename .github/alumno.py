@@ -14,7 +14,7 @@ class Profesor:
     def asistencia_clase(self):
         self.asistencia += 1
 
-profesor_pepe:Profesor = Profesor("Pepe", "jose@um.edu.ar")
+profesor_pepe:Profesor = Profesor("Pepe", "pepe@um.edu.ar")
 print(id(profesor_pepe))
 print("el nombre del profesor es:",profesor_pepe.nombre)
 print("el email del profesor es:",profesor_pepe.email)
