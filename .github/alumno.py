@@ -30,8 +30,7 @@ profesor_pepe.asistencia_clase()
 profesor_pepe.asistencia_clase()
 profesor_pepe.asistencia_clase()
 
-print("la asistencia del profesor es: ")
-print(profesor_pepe.asistencia)
+print("la asistencia del profesor es: ",profesor_pepe.asistencia)
 
 print()
 print("DATOS ALUMNO")
@@ -56,20 +55,15 @@ class Alumno:
 
 alumno_juan:Alumno = Alumno("Juan", "juan@alumno.um.edu.ar", "42611")
 print(id(alumno_juan))
-print("el nombre del alumno es: ")
-print(alumno_juan.nombre)
-print("el email del alumno es: ")
-print(alumno_juan.email)
-print("el legajo del alumno es: ")
-print(alumno_juan.legajo)
-print("la asistencia del alumno es: ")
-print(alumno_juan.asistencia)
+print("el nombre del alumno es:",alumno_juan.nombre)
+print("el email del alumno es:",alumno_juan.email)
+print("el legajo del alumno es:",alumno_juan.legajo)
+print("la asistencia del alumno es:",alumno_juan.asistencia)
 
 print("EL ALUMNO FUE A CLASE...")
 alumno_juan.asistencia_clase()
 
-print("la asistencia del alumno es: ")
-print(alumno_juan.asistencia)
+print("la asistencia del alumno es: ",alumno_juan.asistencia)
 
 print()
 print("DATOS MATERIA")
@@ -77,6 +71,10 @@ print("DATOS MATERIA")
 ###############CLASE MATERIA
 ########################################################
 #agregar materia a alumno usando el metodo de selF
+class Materia:
+    def __init__(self, param_nombre, param_email):
+        self.nombre = param_nombre
+        self.email = param_email
 
 
 print()
